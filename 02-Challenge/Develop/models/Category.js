@@ -13,19 +13,14 @@ Category.init(
       primaryKey: true,
       autoIncrement:true,
     },
-    columns:{
-      type: DataTypes.INTEGER,
+    category_name:{
+      type: DataTypes.STRING,
       allowNull: false,
 
 
-    },
-    product_id:{
-      type: DataTypes.INTEGER,
-      References:{
-      model:'product_id',
-      key:'id'
-      }
     }
+ 
+    
   },
   {
     sequelize,
